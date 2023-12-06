@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: NORTHWIND
+    database: NORTHWIND  
+    schema: RAW_NORTHWIND
+    description: Northwind data coming from Salesforce (example)  
+    tables:
+      - name: _ORDER_
+        description: Table contains all historical data for Northwind orders (example)
+        columns:
+          - name: ID
+            description: Primary Key
+            tests:
+              - unique
+              - not_null
+          - name: SHIPREGION
+          - name: FREIGHT
+          - name: CUSTOMERID
+          - name: SHIPADDRESS
+          - name: SHIPPEDDATE
+          - name: SHIPVIA
+          - name: SHIPNAME
+          - name: SHIPCITY
+          - name: SHIPPOSTALCODE
+          - name: SHIPCOUNTRY
+          - name: REQUIREDDATE
+          - name: ORDERDATE
+          - name: EMPLOYEEID
+              
+          
